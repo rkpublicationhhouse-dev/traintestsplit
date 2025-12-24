@@ -10,12 +10,12 @@ st.write("Labels supported: **Cat** and **Dog**")
 # --- User Input ---
 true_labels = st.text_input(
     "Enter **Actual Labels** (comma-separated: Cat, Dog)",
-    "Cat, Dog, Cat, Cat, Dog, Dog"
+    " "
 )
 
 pred_labels = st.text_input(
     "Enter **Predicted Labels** (comma-separated: Cat, Dog)",
-    "Cat, Dog, Dog, Cat, Cat, Dog"
+    " "
 )
 
 if st.button("Calculate"):
@@ -122,3 +122,4 @@ if st.button("Calculate"):
 
     except Exception as e:
         st.error("⚠️ Please enter labels correctly using Cat or Dog only.")
+
